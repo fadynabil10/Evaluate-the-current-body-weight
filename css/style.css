@@ -1,0 +1,129 @@
+body {
+  background-color: #e8e8e8;
+  text-align: center; }
+
+/*start section*/
+#page_1, #page_2, #page_3 {
+  margin-top: 5%; }
+
+h1, h3 {
+  color: #576273; }
+
+section {
+  position: relative; }
+
+.s1 {
+  margin-bottom: 50px; }
+
+.s1 > i {
+  position: absolute;
+  font-size: 15px;
+  padding: 3PX;
+  top: 84%;
+  color: #a3adb9;
+  background-color: #a3adb9;
+  border-radius: 50%; }
+
+.s1 i:first-child {
+  left: 24%; }
+
+.s1 #i1 {
+  left: 74%; }
+
+.s1 hr {
+  border: 2px solid #a3adb9;
+  width: 49%;
+  margin-top: 25px; }
+
+/*end section*/
+/*start form_1*/
+.form_1 {
+  background-color: white;
+  padding: 11px;
+  margin: auto;
+  width: 55%; }
+
+.form_1 form > div {
+  width: 70%;
+  margin: 20px auto; }
+
+.form_1 form input[type="submit"] {
+  background-color: #14e2ad;
+  color: white;
+  border: 0px none;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 10px; }
+
+.form_1 {
+  position: relative;
+  border-radius: 10px; }
+
+.form_1:before {
+  content: "";
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 10px solid white;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: -9px;
+  left: 2%; }
+
+#page_1 {
+  display: none; }
+  #page_1 .s1 i:first-child {
+    background-color: #14e2ad;
+    color: white; }
+  #page_1 .s1 i:first-child {
+    animation: color1 .5s 3 ease-in-out; }
+
+/*start page_2*/
+#page_2 {
+  display: none; }
+  #page_2 .s1 i:first-child {
+    background-color: #14e2ad;
+    color: white; }
+  #page_2 .form_1:before {
+    left: 50%; }
+  #page_2 .s1 #i2 {
+    background-color: #57c8fd;
+    color: white; }
+  #page_2 .s1 #i2 {
+    animation: color1 .5s 3 ease-in-out; }
+  #page_2 .form_1 form input[type="submit"] {
+    background-color: #57c8fd; }
+
+/*end page_2*/
+/*start page_2*/
+#page_3 {
+  display: none; }
+  #page_3 .s1 i:first-child {
+    background-color: #14e2ad;
+    color: white; }
+  #page_3 .s1 #i1 {
+    background-color: #576273;
+    color: white; }
+  #page_3 .s1 #i1 {
+    animation: color1 .5s 3 ease-in-out; }
+  #page_3 .form_1:before {
+    left: 93%; }
+  #page_3 .s1 #i2 {
+    background-color: #57c8fd;
+    color: white; }
+  #page_3 .form_1 form input[type="submit"] {
+    background-color: #576273; }
+
+/*end page_2*/
+@keyframes color1 {
+  0% {
+    background-color: #a3adb9;
+    color: #a3adb9;
+    padding: 3px; }
+  100% {
+    background-color: #a3adb9;
+    color: #a3adb9;
+    padding: 0px; } }
+
+/*# sourceMappingURL=style.css.map */

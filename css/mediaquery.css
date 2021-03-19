@@ -1,0 +1,31 @@
+/*for mobile*/
+@media (max-width:480px){
+    h1{font-size:20px}
+    .s1 > i{font-size:15px}
+    .form_1{width: 90%;}
+    #page_1 .form_1:before{left:20%;} 
+    #page_3 .form_1:before{left:75%;} 
+}
+
+/*smart phones & tablets*/
+@media (min-width:481px) and (max-width:767px){
+    h1{font-size:25px}
+    .s1 > i{font-size:15px}
+    .form_1{width: 90%;}
+    #page_1 .form_1:before{left:20%;} 
+    #page_3 .form_1:before{left:75%;}
+}
+/*small screen*/
+@media (min-width:768px) and (max-width:991px){
+    .form_1{width: 80%;}
+    #page_1 .form_1:before{left:20%;} 
+    #page_3 .form_1:before{left:80%;}
+    
+}
+
+/*medium screen*/
+@media (min-width:992px) and (max-width:1199px){
+/*start header*/
+
+/*end header*/ 
+}

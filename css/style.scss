@@ -1,0 +1,81 @@
+$maincolor : #e8e8e8;
+$top:84%;
+$left:24%;
+$color_2:#a3adb9;
+$before_left:2%;
+
+body{background-color:$maincolor;text-align:center;}
+/*start section*/
+#page_1,#page_2,#page_3{margin-top: 5%}
+h1,h3{color:#576273}
+section{position:relative}
+.s1{margin-bottom: 50px;}
+.s1 >i{
+    position:absolute;
+    font-size:15px;
+    padding: 3PX;
+    top:$top;
+    color:$color_2;
+    background-color:$color_2;
+    border-radius: 50%;
+}
+.s1 i:first-child{left:$left}
+.s1 #i1{left: $left+50;}
+.s1 hr{border:2px solid $color_2;width:49%;margin-top: 25px;}
+/*end section*/
+/*start form_1*/
+.form_1{background-color: white;padding: 11px;margin: auto;width: 55%;}
+.form_1 form >div{width:70%;margin: 20px auto;}
+.form_1 form input[type="submit"]{
+    background-color: rgb(20, 226, 173);
+    color: white;
+    border: 0px none;
+    padding: 5px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top:10px;
+}
+.form_1{position:relative;border-radius: 10px;}
+.form_1:before{
+    content:"";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 10px solid white;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top: -9px;
+    left: $before_left;
+}
+#page_1{
+    display:none;
+    .s1 i:first-child{background-color: rgb(20, 226, 173);color: white;}
+    .s1 i:first-child{animation:color1 .5s 3 ease-in-out;}
+}
+/*start page_2*/
+#page_2{
+    display:none;
+    .s1 i:first-child{background-color: rgb(20, 226, 173);color: white;}
+    .form_1:before{left: $before_left+48%;} 
+    .s1 #i2{background-color:#57c8fd;color: white;}
+    .s1 #i2{animation:color1 .5s 3 ease-in-out;}
+    .form_1 form input[type="submit"]{background-color:#57c8fd}
+}
+
+/*end page_2*/
+/*start page_2*/
+#page_3{
+    display:none;
+    .s1 i:first-child{background-color: rgb(20, 226, 173);color: white;}
+    .s1 #i1{background-color:#576273;color:white}
+    .s1 #i1{animation:color1 .5s 3 ease-in-out;}
+    .form_1:before{left: $before_left+91%;} 
+    .s1 #i2{background-color:#57c8fd;color: white;}
+    .form_1 form input[type="submit"]{background-color:#576273}
+}
+
+/*end page_2*/
+@keyframes color1{
+    0%{background-color:$color_2;color: $color_2;padding: 3px;}
+    100%{background-color: $color_2;color:$color_2;padding: 0px;}
+}
